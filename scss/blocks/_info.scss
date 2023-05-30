@@ -1,0 +1,136 @@
+.info {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  .container {
+    @include container();
+    .info-title {
+      h2 {
+        @include h();
+        text-align: center;
+      }
+    }
+    .info-list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      align-items:center;
+      li {
+        cursor: pointer;
+        width: 324px;
+        text-align: center;
+        h2 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          @include h();
+          font-size: 24px;
+          line-height: 32px;
+        }
+        p {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #404040;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .info {
+    width: 100%;
+    .container {
+      width: 100%;
+      .info-list {
+        li{
+            width: 240px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:768px) {
+    .info{
+        width: 100%;
+        .container{
+            width: 100%;
+            .info-title{
+                h2{
+                    font-size: 16px;
+                }
+            }
+            .info-list{
+                li{
+                    width: 195px;
+                    h2{
+                        margin-top: 5px;
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .info{
+        width: 100%;
+        .container{
+            width: 100%;
+            .info-title{
+                h2{
+                    font-size: 16px;
+                }
+            }
+            .info-list{
+                li{
+                    width: 195px;
+                    h2{
+                        margin-top: 5px;
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .info{
+        width: 100%;
+        .container{
+            width: 100%;
+            .info-title{
+                h2{
+                    font-size: 16px;
+                }
+            }
+            .info-list{
+                flex-direction: column;
+                align-items:center;
+                row-gap: 20px;
+                li{
+                    width: 370px;
+                    h2{
+                        margin-top: 5px;
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

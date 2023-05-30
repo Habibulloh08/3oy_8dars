@@ -1,0 +1,82 @@
+.tarif {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: #f6f6f6;
+  .container {
+    @include container();
+    .tarif-blocks {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      &_card {
+        width: 600px;
+        height: 400px;
+        background: #ffffff;
+        border-radius: 16px 16px 0px 0px;
+        display: flex;
+        .card-img {
+          width: 600px;
+          border-radius: 16px 16px 0px 0px;
+        
+        }
+      }
+   
+    }
+  }
+}
+.tarif-line_img {
+  margin-top: 80px;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .tarif {
+    width: 100%;
+    .container {
+      width: 100%;
+      .tarif-blocks {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .tarif {
+    width: 100%;
+    .container {
+      width: 100%;
+      .tarif-blocks {
+        flex-direction: column;
+        align-items: center;
+        &_card {
+          .card-img {
+            width: 640px;
+            height: 331px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+    .tarif {
+      width: 100%;
+      .container {
+        width: 100%;
+        .tarif-blocks {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 50px;
+          &_card {
+            width: 440px;
+            height: 308px;
+            .card-img {
+              width: 440px;
+            //   height: 200px;
+            }
+          }
+        }
+      }
+    }
+  }

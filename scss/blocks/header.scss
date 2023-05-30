@@ -1,0 +1,119 @@
+@import "../global.scss";
+.header {
+  .container {
+    @include container();
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: $width;
+      &_logo {
+        width: 15%;
+        cursor: pointer;
+      }
+      &_list {
+        width: 75%;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        cursor: pointer;
+        li {
+          @include text();
+        }
+        li:hover {
+          color: #119fc3;
+        }
+      }
+      &_catalog {
+        display: none;
+      }
+      &_search {
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 100%;
+    .container {
+      width: 100%;
+      .header-nav {
+        &_logo {
+          width: 12%;
+        }
+        &_list {
+          width: 80%;
+          li {
+            font-size: 12px;
+          }
+          li:active {
+            color: #119fc3;
+          }
+        }
+        &_search {
+          width: 8%;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    .container {
+      width: 100%;
+      .header-nav {
+        &_logo {
+          width: 80%;
+        }
+        &_list {
+          width: 88%;
+          li {
+           display: none;
+          }
+        }
+        &_catalog {
+          display: block;
+          width: 10%;
+
+        }
+        &_search {
+          width: 10%;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:480px){
+    .header {
+        width: 100%;
+        .container {
+          width: 100%;
+          .header-nav {
+            &_logo {
+              width: 65%;
+            }
+            &_list {
+              li {
+               display: none;
+              }
+            }
+            &_catalog {
+              display: block;
+              width: 15%;
+    
+            }
+            &_search {
+              width: 20%;
+              justify-content: end;
+            }
+          }
+        }
+      }
+}

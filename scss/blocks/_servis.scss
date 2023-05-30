@@ -1,0 +1,156 @@
+.servis {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+
+  .container {
+    @include container();
+    .servis-block {
+      // background: rgba(240, 240, 240, 1);
+  
+      h2 {
+        @include h2();
+        color: rgba(17, 159, 195, 1);
+      }
+      p {
+        @include p2();
+        color: #404040;
+      }
+    }
+    .servis-title {
+      margin-top: 100px;
+      text-align: center;
+      h2 {
+        @include h();
+      }
+      p {
+        @include p2();
+      }
+    }
+    .servis-list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      align-items: center;
+      margin-top: 50px;
+      li {
+        text-align: center;
+        cursor: pointer;
+        h2 {
+          @include h();
+          font-size: 24px;
+        }
+        p {
+          font-family: "Roboto Slab";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+          color: #404040;
+        }
+        .servis-list_span{
+            color: #119FC3;
+            border-bottom: 1px dashed #119FC3;
+            line-height: 40px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1000px){
+  .servis{
+    width: 100%;
+    .container{
+      width: 100%;
+      .servis-block{
+        width: $width;
+      }
+      .servis-list{
+        li{
+          h2 {
+            @include h();
+            font-size: 24px;
+            line-height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:768px){
+  .servis{
+    width: 100%;
+    .container{
+      width: 100%;
+      .servis-block{
+        h2{
+          font-size: 24px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+      .servis-title{
+        h2{
+          font-size: 16px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+      .servis-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+        gap: 50px;
+        li{
+          h2{
+            font-size: 16px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:480px){
+  .servis{
+    width: 100%;
+    .container{
+      width: 100%;
+      .servis-block{
+        h2{
+          font-size: 16px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+      .servis-title{
+        h2{
+          font-size: 16px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+      .servis-list{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        gap: 50px;
+        li{
+          h2{
+            font-size: 16px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

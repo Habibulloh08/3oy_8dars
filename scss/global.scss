@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // transition: all 1s;
+}
+$width: 100%;
+$border: 1px solid;
+
+@mixin container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  // border: 1px solid;
+  // background: rgba(240, 240, 240, 1);
+}
+@mixin text {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+@mixin h2 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 1;
+}
+@mixin p {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+@mixin p2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 30px;
+  color: #404040;
+}
+
+@mixin h {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 45px;
+  color: #404040;
+  opacity: 0.9;
+}
